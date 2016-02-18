@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wendycan/electron-quick-start.git"
