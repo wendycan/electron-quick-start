@@ -6,13 +6,15 @@
   </head>
   <body>
     <h1>YueTai</h1>
+    <span id="goBackBtn">返回</span>
     <div class="indicator"></div>
     <webview id="webview" src="http://yuetai.larklearning.com/" style="display:inline-block; width:100%; height:600px"></webview>
   </body>
   <script>
-    var onload = function() {
+    window.onload = function() {
       var webview = document.getElementById("webview");
       var indicator = document.querySelector(".indicator");
+      var elGoBackBtn = document.getElementById("goBackBtn");
 
       var loadstart = function() {
         indicator.innerText = "loading...";
@@ -22,6 +24,10 @@
       }
       webview.addEventListener("did-start-loading", loadstart);
       webview.addEventListener("did-stop-loading", loadstop);
+      window.addEventListener("click", function () {
+        webview.goBack();
+      });
+      // if (webview.canGoBack()) {};
     }
   </script>
 </html>
