@@ -88,9 +88,9 @@ gulp.task('lint', () => {
 
 gulp.task('watchTask', () => {
   gulp.watch(paths.srcCss, ['styles']);
-  gulp.watch(paths.srcJsx, ['lint']);
+  // gulp.watch(paths.srcJsx, ['lint']);
 });
 
-gulp.task('watch', ['watchTask', 'watchify', 'styles', 'lint']);
+gulp.task('watch', ['watchTask', 'watchify', 'styles']);
 
 gulp.task('build', ['browserify', 'styles']);
