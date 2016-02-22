@@ -1,5 +1,5 @@
 {
-  "name": "electron-quick-start",
+  "name": "yuetai-desktop",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wendycan/electron-quick-start.git"
+    "url": "git+https://github.com/wendycan/yuetai-desktop.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wendycan/electron-quick-start/issues"
+    "url": "https://github.com/wendycan/yuetai-desktop/issues"
   },
-  "homepage": "https://github.com/wendycan/electron-quick-start#readme",
+  "homepage": "https://github.com/wendycan/yuetai-desktop#readme",
   "devDependencies": {
     "electron-packager": "^5.2.1",
     "electron-prebuilt": "^0.36.7",
