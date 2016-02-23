@@ -1,16 +1,3 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-
-var CommentBox = React.createClass({
-  render: function() {
-    return (
-      <div className="commentBox">
-        Hello, world!
-      </div>
-    );
-  }
-});
-ReactDOM.render(
-  <CommentBox />,
-  document.getElementById('example')
-);
+console.log 'hhh'
+alert 'hh'
+console.log 'hh'
