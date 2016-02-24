@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 .nav {
   background-color: #e4e2e5;
   height: 80px;
@@ -16,12 +20,14 @@ body {
 
 .container {
   overflow: hidden;
-  height: 648px;
+  height: 100%;
+  margin-top: -80px;
+  padding-top: 80px;
 }
 
 .menu-col {
   width: 13%;
-  height: 648px;
+  height: 100%;
   overflow: scroll;
   float: left;
   background-color: #ededf4;
@@ -30,7 +36,7 @@ body {
 .blogs-col {
   width: 15%;
   float: left;
-  height: 648px;
+  height: 100%;
   overflow: scroll;
   background-color: #f7f7f7;
   border-right: solid 1px #d5d8d5;
@@ -40,7 +46,7 @@ body {
 .blog-col {
   width: 72%;
   float: left;
-  height: 648px;
+  height: 100%;
   padding: 5px 40px;
   background-color: #f1f1f3;
   overflow: scroll;
