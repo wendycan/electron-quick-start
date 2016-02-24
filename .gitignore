@@ -4,3 +4,4 @@ YueTai-*
 dist
 *.map
 src/main.*
+bower_components

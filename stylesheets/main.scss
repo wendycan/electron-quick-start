@@ -1,3 +1,4 @@
+@import '../bower_components/font-awesome/css/font-awesome.css';
 @import '../node_modules/simditor/styles/simditor.css';
 
 
@@ -13,22 +14,52 @@ html, body {
   height: 100%;
 }
 
+.button {
+  padding: 0 5px;
+  display: inline-block;
+}
+
 .nav {
   background-color: #e4e2e5;
   height: 80px;
+  padding: 0 5px 0 10px;
+  width: 100%;
+  position: fixed;
+  .button {
+    line-height: 70px;
+  }
+  .nav-left {
+    float: left;
+    img {
+      margin-top: 10px;
+      height: 60px;
+    }
+  }
+  .nav-right {
+    float: right;
+    i {
+      font-size: 30px;
+      vertical-align: middle;
+    }
+    img {
+      height: 40px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+  }
 }
 
 .container {
   overflow: hidden;
   height: 100%;
-  margin-top: -80px;
   padding-top: 80px;
+  clear: both;
 }
 
 .menu-col {
   width: 13%;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
   float: left;
   background-color: #ededf4;
 }
@@ -37,7 +68,7 @@ html, body {
   width: 15%;
   float: left;
   height: 100%;
-  overflow: scroll;
+  overflow: auto;
   background-color: #f7f7f7;
   border-right: solid 1px #d5d8d5;
   border-left: solid 1px #d5d8d5;
@@ -49,7 +80,7 @@ html, body {
   height: 100%;
   padding: 5px 40px;
   background-color: #f1f1f3;
-  overflow: scroll;
+  overflow: auto;
   .simditor {
     border: none;
     .simditor-toolbar {

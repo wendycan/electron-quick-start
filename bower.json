@@ -1,0 +1,19 @@
+{
+  "name": "yuetai-desktop",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wendycan/yuetai-desktop",
+  "authors": [
+    "wendy <wendycaner@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0"
+  }
+}
