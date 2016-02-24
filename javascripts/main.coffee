@@ -1,6 +1,8 @@
-$ = require 'jquery'
-Simditor = require 'simditor'
+Nav = require './nav'
+Main_menu = require './main_menu'
+Blogs = require './blogs'
+Blog = require './blog'
 
-editor = new Simditor({
-  textarea: $('#editor')
-})
+window.init = (remote) ->
+  nav = new Nav(remote)
+  blog = new Blog

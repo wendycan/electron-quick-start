@@ -6,43 +6,37 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <div class="nav">
+    <div class="nav" id="nav">
       <div class="nav-left">
         <img src="../images/yuetai.png" alt="">
       </div>
       <div class="nav-right">
-<!--         <div class="button">
-          <i class="fa fa-cloud-upload"></i>
-        </div>
-        <div class="button">
-          <i class="fa fa-cloud-download"></i>
-        </div>
- -->
         <div class="button">
           <i class="fa fa-plus"></i>
         </div>
         <div class="button">
           <i class="fa fa-refresh"></i>
         </div>
-        <div class="button">
+        <div class="button nav-avator">
           <img src="../images/wendy.jpeg" alt="">
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="menu-col">
+      <div class="menu-col" id="main-menu">
       </div>
-      <div class="blogs-col">
+      <div class="blogs-col" id="blogs">
       </div>
-      <div class="blog-col">
+      <div class="blog-col" id="blog">
         <textarea id="editor" placeholder="Balabala" autofocus></textarea>
       </div>
     </div>
   </body>
+  <script src="./main.js"></script>
   <script>
     window.onload = function() {
       const remote = require('electron').remote;
+      init(remote);
     }
   </script>
-  <script src="./main.js"></script>
 </html>

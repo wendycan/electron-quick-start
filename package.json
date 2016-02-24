@@ -5,8 +5,6 @@
   "main": "main.js",
   "scripts": {
     "start": "./node_modules/.bin/electron .",
-    "watch": "gulp watch",
-    "build": "gulp build",
     "deploy": "./node_modules/.bin/electron-packager . YueTai --platform=darwin --arch=x64 --icon=images/yuetai –-out=dist --overwrite --version-string.ProductName=YueTai --app-version=0.0.1"
   },
   "repository": {

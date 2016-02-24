@@ -7,6 +7,7 @@ var concat = require('gulp-concat');
 
 const paths = {
   bundle: 'main.js',
+  srcJsWatched: './javascripts/*',
   srcJs: 'javascripts/main.coffee',
   srcCss: 'stylesheets/main.scss',
   dist: 'src'
@@ -19,6 +20,8 @@ gulp.task('coffee', function () {
     .pipe(browserify({
       transform: ['coffeeify'],
       extensions: ['.coffee']
+      // ignoreMissing: true,
+      // detectGlobals: false
     }))
     .pipe(concat('main.js'))
     .pipe(gulp.dest(paths.dist));
@@ -31,7 +34,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(paths.dist));
 });
 
-gulp.watch(paths.srcJs, ['coffee']);
+gulp.watch(paths.srcJsWatched, ['coffee']);
 gulp.watch(paths.srcCss, ['sass']);
 
 gulp.task('default', ['coffee', 'sass']);
