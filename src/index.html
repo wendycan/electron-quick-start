@@ -6,44 +6,22 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <h1>YueTai</h1>
-    <span id="goBackBtn">返回</span>
-    <div class="indicator"></div>
-    <webview id="webview" src="http://yuetai.larklearning.com/" style="display:inline-block; width:100%; height:600px"></webview>
-    <div id="example"></div>
+    <div class="nav">
+      <button class="button">发布</button>
+    </div>
+    <div class="container">
+      <div class="menu-col">
+      </div>
+      <div class="blogs-col">
+      </div>
+      <div class="blog-col">
+        <textarea id="editor" placeholder="Balabala" autofocus></textarea>
+      </div>
+    </div>
   </body>
   <script>
     window.onload = function() {
       const remote = require('electron').remote;
-      const Menu = remote.Menu;
-      const MenuItem = remote.MenuItem;
-
-      var menu = new Menu();
-      menu.append(new MenuItem({ label: 'MenuItem1', click: function() { console.log('item 1 clicked'); } }));
-      menu.append(new MenuItem({ type: 'separator' }));
-      menu.append(new MenuItem({ label: 'MenuItem2', type: 'checkbox', checked: true }));
-
-      var webview = document.getElementById("webview");
-      var indicator = document.querySelector(".indicator");
-      var elGoBackBtn = document.getElementById("goBackBtn");
-
-      var loadstart = function() {
-        indicator.innerText = "loading...";
-      }
-      var loadstop = function() {
-        indicator.innerText = "";
-      }
-      webview.addEventListener("did-start-loading", loadstart);
-      webview.addEventListener("did-stop-loading", loadstop);
-      window.addEventListener("click", function () {
-        webview.goBack();
-      });
-      // if (webview.canGoBack()) {};
-      //
-      window.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-        menu.popup(remote.getCurrentWindow());
-      }, false);
     }
   </script>
   <script src="./main.js"></script>

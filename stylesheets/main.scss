@@ -1,7 +1,53 @@
 @import '../node_modules/simditor/styles/simditor.css';
 
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  h1 {
-    color: red;
+  margin: 0;
+}
+
+.nav {
+  background-color: #e4e2e5;
+  height: 80px;
+}
+
+.container {
+  overflow: hidden;
+  height: 648px;
+}
+
+.menu-col {
+  width: 13%;
+  height: 648px;
+  overflow: scroll;
+  float: left;
+  background-color: #ededf4;
+}
+
+.blogs-col {
+  width: 15%;
+  float: left;
+  height: 648px;
+  overflow: scroll;
+  background-color: #f7f7f7;
+  border-right: solid 1px #d5d8d5;
+  border-left: solid 1px #d5d8d5;
+}
+
+.blog-col {
+  width: 72%;
+  float: left;
+  height: 648px;
+  padding: 5px 40px;
+  background-color: #f1f1f3;
+  overflow: scroll;
+  .simditor {
+    border: none;
+    .simditor-toolbar {
+      background-color: #f1f1f3;
+    }
   }
 }
