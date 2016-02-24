@@ -1,3 +1,2 @@
-console.log 'hhh'
-alert 'hh'
-console.log 'hh'
+$ = require 'jquery'
+Simditor = require 'simditor'

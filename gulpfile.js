@@ -26,6 +26,7 @@ gulp.task('coffee', function () {
 
 gulp.task('sass', function () {
   gulp.src(paths.srcCss)
+    .pipe(concat('main.css'))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(paths.dist));
 });
